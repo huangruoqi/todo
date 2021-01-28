@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+html{
+  height: 100%;
+  background:#924444;
+  background-repeat: no-repeat;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  color: #0f222d;
+  background-size: auto;
+}
+
+.main{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+h1{
+  text-align: center;
+  font-size: 5em;
+  color: #e9717b;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+form{
+  background-color: #ddd;
+  padding: 15px;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="text"]{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  width: 310px;
+  height: 30px;
+  outline: 0;
+  border: none;
+  font-size: 2em;
+  background: #ddd;
+  color: #2f4f4f;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 2em;
+  color: #509ccc;
+  background-color: #ddd;
+  outline: 0;
+  border: none;
+  width: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.tasksBoard{
+  background-color: #ddd;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  display: none;
+
+}
+ul{
+  list-style: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+li{
+  position: relative;
+  border-bottom: 1px solid #427594;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 1.8em;
+  color: #2f4f4f;
+}
+a{
+  float: right;
+  text-align: right;
+
+  color: #b45252;
+  font-size: 1.2em;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.delete{
+  position: absolute; 
+  border-radius: 20%;
+  right:0px;
+  background-color: #b65555;
+  padding: 0px 9px 4px 10px;
+  color: #ddd;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.labels {
+  width: 100px;
+}
+
+@media (max-width: 500px) {
+  .main{
+    margin: auto;
+    width: 100%;
+  }
+  input[type="text"]{
+    width: 80%;
+  }
+  button{
+    width: 10%;
+  }
+}
