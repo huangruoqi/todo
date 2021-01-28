@@ -107,9 +107,10 @@ function clearList() {
 
 // deleteTick
 function deleteOrTick(e) {
-  if (e.target.className == 'delete')
+  if (e.target.className == 'delete'){
     deleteTask(e);
-  numOfTasks--;
+    numOfTasks--;
+  }
   if (numOfTasks == 0) {
     let ul = document.querySelector('ul');
     ul.innerHTML = '';
