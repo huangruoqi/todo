@@ -23,12 +23,20 @@ db.collection('tasks').get().then((snapshot) => {
 let numOfTasks = 0
 let reallyClear = false;
 loadEvents();
+
+
+
+
 // load every event in the page
 function loadEvents() {
   document.querySelector('form').addEventListener('submit', submit);
   document.getElementById('clear').addEventListener('click', clearList);
   document.querySelector('ul').addEventListener('click', deleteOrTick);
-
+  document.getElementsByClassName('tasksBoard')[0].addEventListener('click', () => {
+    const clear = document.getElementById('clear');
+    clear.style.color = "#b45252"
+    reallyClear = false;
+  })
 }
 // subit data function
 function submit(e) {
@@ -107,7 +115,7 @@ function clearList() {
 
 // deleteTick
 function deleteOrTick(e) {
-  if (e.target.className == 'delete'){
+  if (e.target.className == 'delete') {
     deleteTask(e);
     numOfTasks--;
   }
