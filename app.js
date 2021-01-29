@@ -32,11 +32,6 @@ function loadEvents() {
   document.querySelector('form').addEventListener('submit', submit);
   document.getElementById('clear').addEventListener('click', clearList);
   document.querySelector('ul').addEventListener('click', deleteOrTick);
-  document.getElementsByClassName('tasksBoard')[0].addEventListener('click', () => {
-    const clear = document.getElementById('clear');
-    clear.style.color = "#b45252"
-    reallyClear = false;
-  })
 }
 // subit data function
 function submit(e) {
